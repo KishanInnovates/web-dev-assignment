@@ -11,6 +11,7 @@ connectDB();
 app.use(express.json({ extended: false }));
 
 // Define Routes
+//admin and user routes
 app.use("/api/admin", require("./src/routes/admin"));
 app.use("/api/user", require("./src/routes/user"));
 app.get("/", (req, res) => {
