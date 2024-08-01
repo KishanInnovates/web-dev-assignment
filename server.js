@@ -4,7 +4,7 @@ const connectDB = require("./src/config/db");
 const app = express();
 require("dotenv").config();
 
-// Connect Database
+// Connect Database mongo 
 connectDB();
 
 // Init Middleware
